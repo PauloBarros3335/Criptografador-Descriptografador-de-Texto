@@ -14,27 +14,34 @@ header {
   margin-bottom: 20px;
 }
 
+h1 {
+  font-size: 2em;
+}
+
 .main-container {
   display: flex;
-  justify-content: space-between;
   width: 80%;
 }
 
 .decodificador-container {
-  width: 60%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex: 1;
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
 }
 
 .image-section {
-  width: 30%;
+  flex: 1;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-section__img {
+  max-width: 100%;
+  height: auto;
 }
 
 .text-section {
@@ -49,7 +56,8 @@ textarea {
 
 .button-section {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 button {
@@ -65,4 +73,31 @@ button {
   border: 1px solid #ccc;
   padding: 10px;
   min-height: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 1em;
+  }
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+  }
+
+  .decodificador-container,
+  .image-section {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  textarea {
+    height: 80px;
+  }
+
+  button {
+    padding: 8px 12px;
+  }
 }
