@@ -89,7 +89,7 @@ button {
 
   .decodificador-container,
   .image-section {
-    width: 100%;
+    width: auto;
     margin-right: 0;
   }
 
