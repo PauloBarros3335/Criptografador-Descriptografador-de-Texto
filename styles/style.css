@@ -68,7 +68,7 @@ button {
 }
 
 #outputText {
-  width: 100%;
+  width: auto;
   margin-top: 20px;
   border: 1px solid #ccc;
   padding: 10px;
