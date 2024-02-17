@@ -90,7 +90,7 @@ button {
   .decodificador-container,
   .image-section {
     width: auto;
-    margin-right: 0;
+    margin-right: 40px;
   }
 
   textarea {
