@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Criptografador/Descriptografador de Texto</title>
+  </head>
+  <body>
+    <header>
+      <h1>Criptografador/Descriptografador de Texto</h1>
+    </header>
+
+    <main class="main-container">
+      <section class="decodificador-container">
+        <section class="text-section">
+          <label for="inputText">Texto:</label>
+          <textarea id="inputText" placeholder="Insira o texto aqui"></textarea>
+        </section>
+
+        <section class="text-section">
+          <label for="operation">Operação:</label>
+          <select id="operation">
+            <option value="encrypt">Criptografar</option>
+            <option value="decrypt">Descriptografar</option>
+          </select>
+        </section>
+
+        <section class="button-section">
+          <button onclick="realizarOperacao()">Executar</button>
+          <button onclick="copiarParaAreaTransferencia()">Copiar</button>
+        </section>
+
+        <section id="outputText"></section>
+      </section>
+
+      <section class="image-section">
+        <img
+          class="image-section__img"
+          src="./assets/High quality products 1 1@2x.png"
+          alt="Imagem de Exemplo"
+        />
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
