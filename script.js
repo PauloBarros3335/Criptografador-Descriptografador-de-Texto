@@ -1,7 +1,12 @@
 function realizarOperacao() {
-  const textoEntrada = document.getElementById("inputText").value.toLowerCase();
+  const textoEntrada = document.getElementById("inputText").value;
   const operacao = document.getElementById("operation").value;
   let textoResultado = "";
+
+  if (contemMaiusculas(textoEntrada)) {
+    alert("Por favor, digite apenas letras minúsculas.");
+    return;
+  }
 
   if (operacao === "encrypt") {
     textoResultado = criptografarTexto(textoEntrada);
@@ -10,6 +15,10 @@ function realizarOperacao() {
   }
 
   document.getElementById("outputText").innerText = textoResultado;
+}
+
+function contemMaiusculas(texto) {
+  return /[A-Z]/.test(texto);
 }
 
 function criptografarTexto(texto) {
